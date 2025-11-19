@@ -1,4 +1,4 @@
-# Portfolio - Lina María Martínez
+# Portfolio - Linamaría Martínez
 
 Portfolio web moderno construido con Next.js 14, TypeScript y Tailwind CSS.
 

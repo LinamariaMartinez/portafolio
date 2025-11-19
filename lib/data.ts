@@ -1,5 +1,5 @@
 export const personalInfo = {
-  name: 'Lina María Martínez',
+  name: 'Linamaría Martínez',
   title: 'Desarrolladora Full Stack',
   bio: 'Apasionada por crear experiencias web modernas y funcionales. Especializada en React, Next.js y TypeScript.',
   location: 'Colombia',

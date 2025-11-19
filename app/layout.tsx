@@ -3,8 +3,8 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Lina María Martínez | Portfolio',
-  description: 'Portfolio personal de Lina María Martínez - Desarrolladora Full Stack',
+  title: 'Linamaría Martínez | Portfolio',
+  description: 'Portfolio personal de Linamaría Martínez - Desarrolladora Full Stack',
   keywords: ['portfolio', 'desarrolladora', 'full stack', 'Next.js', 'React', 'TypeScript'],
 }
 
