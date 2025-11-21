@@ -37,8 +37,8 @@ export function Footer() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="p-3 rounded-full bg-white dark:bg-slate-900
-                border border-gray-200 dark:border-slate-800
+              className="p-3 rounded-full bg-white dark:bg-slate-800
+                border border-gray-200 dark:border-slate-600
                 hover:border-primary dark:hover:border-primary
                 transition-colors duration-300"
               aria-label="GitHub"
@@ -52,8 +52,8 @@ export function Footer() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="p-3 rounded-full bg-white dark:bg-slate-900
-                border border-gray-200 dark:border-slate-800
+              className="p-3 rounded-full bg-white dark:bg-slate-800
+                border border-gray-200 dark:border-slate-600
                 hover:border-primary dark:hover:border-primary
                 transition-colors duration-300"
               aria-label="LinkedIn"
@@ -65,8 +65,8 @@ export function Footer() {
               href={`mailto:${personalInfo.email}`}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="p-3 rounded-full bg-white dark:bg-slate-900
-                border border-gray-200 dark:border-slate-800
+              className="p-3 rounded-full bg-white dark:bg-slate-800
+                border border-gray-200 dark:border-slate-600
                 hover:border-primary dark:hover:border-primary
                 transition-colors duration-300"
               aria-label="Email"

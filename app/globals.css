@@ -54,11 +54,17 @@
 :root {
   --background: #ffffff;
   --foreground: #0f172a;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --card-hover: #f1f5f9;
 }
 
 .dark {
   --background: #0f172a;
   --foreground: #f8fafc;
+  --card-bg: #1e293b;
+  --card-border: #334155;
+  --card-hover: #475569;
 }
 
 body {
