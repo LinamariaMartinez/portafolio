@@ -12,7 +12,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "framer-motion": "^12.23.24",
     "lucide-react": "^0.554.0",
