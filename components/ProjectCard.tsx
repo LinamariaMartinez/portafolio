@@ -17,22 +17,22 @@ interface ProjectCardProps {
 
 // Colores por tecnología - mejorados para dark mode
 const tagColors: Record<string, string> = {
-  'React': 'bg-blue-500/10 dark:bg-blue-400/20 text-blue-600 dark:text-blue-300 border-blue-500/20 dark:border-blue-400/30',
-  'Next.js': 'bg-blue-600/10 dark:bg-blue-500/20 text-blue-700 dark:text-blue-200 border-blue-600/20 dark:border-blue-500/30',
-  'TypeScript': 'bg-blue-700/10 dark:bg-blue-600/20 text-blue-800 dark:text-blue-100 border-blue-700/20 dark:border-blue-600/30',
-  'Tailwind': 'bg-cyan-500/10 dark:bg-cyan-400/20 text-cyan-600 dark:text-cyan-300 border-cyan-500/20 dark:border-cyan-400/30',
-  'Supabase': 'bg-green-500/10 dark:bg-green-400/20 text-green-600 dark:text-green-300 border-green-500/20 dark:border-green-400/30',
-  'Node.js': 'bg-green-600/10 dark:bg-green-500/20 text-green-700 dark:text-green-200 border-green-600/20 dark:border-green-500/30',
-  'MongoDB': 'bg-green-700/10 dark:bg-green-600/20 text-green-800 dark:text-green-100 border-green-700/20 dark:border-green-600/30',
-  'Express': 'bg-gray-500/10 dark:bg-gray-400/20 text-gray-700 dark:text-gray-200 border-gray-500/20 dark:border-gray-400/30',
-  'PostgreSQL': 'bg-blue-400/10 dark:bg-blue-300/20 text-blue-500 dark:text-blue-200 border-blue-400/20 dark:border-blue-300/30',
-  'Stripe': 'bg-purple-500/10 dark:bg-purple-400/20 text-purple-600 dark:text-purple-300 border-purple-500/20 dark:border-purple-400/30',
-  'Prisma': 'bg-indigo-500/10 dark:bg-indigo-400/20 text-indigo-600 dark:text-indigo-300 border-indigo-500/20 dark:border-indigo-400/30',
-  'Socket.io': 'bg-slate-500/10 dark:bg-slate-400/20 text-slate-700 dark:text-slate-200 border-slate-500/20 dark:border-slate-400/30',
-  'Chart.js': 'bg-pink-500/10 dark:bg-pink-400/20 text-pink-600 dark:text-pink-300 border-pink-500/20 dark:border-pink-400/30',
-  'OpenWeather API': 'bg-orange-500/10 dark:bg-orange-400/20 text-orange-600 dark:text-orange-300 border-orange-500/20 dark:border-orange-400/30',
-  'Mapbox': 'bg-blue-500/10 dark:bg-blue-400/20 text-blue-600 dark:text-blue-300 border-blue-500/20 dark:border-blue-400/30',
-  'jsPDF': 'bg-red-500/10 dark:bg-red-400/20 text-red-600 dark:text-red-300 border-red-500/20 dark:border-red-400/30',
+  'React': 'bg-blue-500/10 dark:bg-blue-400/20 text-blue-500 dark:text-blue-300 border-blue-500/20 dark:border-blue-400/30',
+  'Next.js': 'bg-blue-600/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-200 border-blue-600/20 dark:border-blue-500/30',
+  'TypeScript': 'bg-blue-700/10 dark:bg-blue-600/20 text-blue-700 dark:text-blue-100 border-blue-700/20 dark:border-blue-600/30',
+  'Tailwind': 'bg-cyan-500/10 dark:bg-cyan-400/20 text-cyan-500 dark:text-cyan-300 border-cyan-500/20 dark:border-cyan-400/30',
+  'Supabase': 'bg-green-500/10 dark:bg-green-400/20 text-green-500 dark:text-green-300 border-green-500/20 dark:border-green-400/30',
+  'Node.js': 'bg-green-600/10 dark:bg-green-500/20 text-green-600 dark:text-green-200 border-green-600/20 dark:border-green-500/30',
+  'MongoDB': 'bg-green-700/10 dark:bg-green-600/20 text-green-700 dark:text-green-100 border-green-700/20 dark:border-green-600/30',
+  'Express': 'bg-gray-500/10 dark:bg-gray-400/20 text-gray-500 dark:text-gray-200 border-gray-500/20 dark:border-gray-400/30',
+  'PostgreSQL': 'bg-blue-400/10 dark:bg-blue-300/20 text-blue-400 dark:text-blue-200 border-blue-400/20 dark:border-blue-300/30',
+  'Stripe': 'bg-purple-500/10 dark:bg-purple-400/20 text-purple-500 dark:text-purple-300 border-purple-500/20 dark:border-purple-400/30',
+  'Prisma': 'bg-indigo-500/10 dark:bg-indigo-400/20 text-indigo-500 dark:text-indigo-300 border-indigo-500/20 dark:border-indigo-400/30',
+  'Socket.io': 'bg-slate-500/10 dark:bg-slate-400/20 text-slate-500 dark:text-slate-200 border-slate-500/20 dark:border-slate-400/30',
+  'Chart.js': 'bg-pink-500/10 dark:bg-pink-400/20 text-pink-500 dark:text-pink-300 border-pink-500/20 dark:border-pink-400/30',
+  'OpenWeather API': 'bg-orange-500/10 dark:bg-orange-400/20 text-orange-500 dark:text-orange-300 border-orange-500/20 dark:border-orange-400/30',
+  'Mapbox': 'bg-blue-500/10 dark:bg-blue-400/20 text-blue-500 dark:text-blue-300 border-blue-500/20 dark:border-blue-400/30',
+  'jsPDF': 'bg-red-500/10 dark:bg-red-400/20 text-red-500 dark:text-red-300 border-red-500/20 dark:border-red-400/30',
 }
 
 const getTagColor = (tag: string) => {
