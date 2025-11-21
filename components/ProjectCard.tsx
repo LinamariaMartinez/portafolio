@@ -52,13 +52,15 @@ export function ProjectCard({
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ scale: 1.02 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      viewport={{ once: true, margin: "-50px" }}
       className="group relative rounded-2xl overflow-hidden
         bg-white dark:bg-slate-900/50
         border border-gray-200 dark:border-slate-800
         hover:border-gray-300 dark:hover:border-slate-700
-        hover:scale-[1.02] hover:shadow-2xl
+        hover:shadow-2xl
         transition-all duration-300"
     >
       {/* Badge Featured */}
@@ -109,34 +111,36 @@ export function ProjectCard({
         {/* Footer con botones */}
         <div className="flex gap-3 mt-auto pt-2">
           {demo && (
-            <a
+            <motion.a
               href={demo}
               target="_blank"
               rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
               className="flex-1 px-4 py-2.5 rounded-lg bg-primary text-white
                 hover:bg-primary/90 transition-all duration-300
-                flex items-center justify-center gap-2 text-sm font-medium
-                hover:scale-105"
+                flex items-center justify-center gap-2 text-sm font-medium"
             >
               <ExternalLink className="h-4 w-4" />
               Demo
-            </a>
+            </motion.a>
           )}
           {github && (
-            <a
+            <motion.a
               href={github}
               target="_blank"
               rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
               className={`${demo ? 'px-4' : 'flex-1'} py-2.5 rounded-lg
                 border border-gray-300 dark:border-slate-700
                 hover:bg-gray-100 dark:hover:bg-slate-800
                 transition-all duration-300
-                flex items-center justify-center gap-2 text-sm font-medium
-                hover:scale-105`}
+                flex items-center justify-center gap-2 text-sm font-medium`}
             >
               <Github className="h-4 w-4" />
               {!demo && 'GitHub'}
-            </a>
+            </motion.a>
           )}
         </div>
       </div>
