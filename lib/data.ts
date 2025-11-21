@@ -2,6 +2,7 @@ export const personalInfo = {
   name: 'Linamaría Martínez',
   title: 'Desarrolladora Full Stack',
   bio: 'Apasionada por crear experiencias web modernas y funcionales. Especializada en React, Next.js y TypeScript.',
+  fullBio: 'Desarrolladora Full Stack con más de 3 años de experiencia creando aplicaciones web modernas y escalables. Me especializo en el ecosistema de React y Next.js, con un fuerte enfoque en la experiencia del usuario y las mejores prácticas de desarrollo. Apasionada por el código limpio, la accesibilidad y el rendimiento.',
   location: 'Colombia',
   email: 'contacto@example.com',
   social: {
@@ -16,16 +17,25 @@ export const stats = [
     id: 1,
     label: 'Años de experiencia',
     value: '3+',
+    icon: 'calendar',
   },
   {
     id: 2,
     label: 'Proyectos completados',
     value: '20+',
+    icon: 'folder',
   },
   {
     id: 3,
     label: 'Clientes satisfechos',
     value: '15+',
+    icon: 'users',
+  },
+  {
+    id: 4,
+    label: 'Tazas de café',
+    value: '∞',
+    icon: 'coffee',
   },
 ]
 
@@ -33,26 +43,44 @@ export const skills = [
   {
     id: 1,
     category: 'Frontend',
-    items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    items: [
+      { name: 'React', level: 95 },
+      { name: 'Next.js', level: 90 },
+      { name: 'TypeScript', level: 88 },
+      { name: 'Tailwind CSS', level: 92 },
+      { name: 'Framer Motion', level: 85 }
+    ],
   },
   {
     id: 2,
     category: 'Backend',
-    items: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Prisma'],
+    items: [
+      { name: 'Node.js', level: 87 },
+      { name: 'Express', level: 85 },
+      { name: 'PostgreSQL', level: 82 },
+      { name: 'MongoDB', level: 80 },
+      { name: 'Prisma', level: 88 }
+    ],
   },
   {
     id: 3,
     category: 'Herramientas',
-    items: ['Git', 'Docker', 'Vercel', 'Figma', 'VS Code'],
+    items: [
+      { name: 'Git', level: 90 },
+      { name: 'Docker', level: 75 },
+      { name: 'Vercel', level: 92 },
+      { name: 'Figma', level: 78 },
+      { name: 'VS Code', level: 95 }
+    ],
   },
 ]
 
 export const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'Plataforma de comercio electrónico completa con carrito de compras, pagos y panel de administración.',
-    image: '/projects/project1.jpg',
+    title: 'Event Master',
+    description: 'Plataforma completa de gestión de eventos con registro de asistentes, venta de tickets y análisis en tiempo real.',
+    image: '/projects/event-master.jpg',
     tags: ['Next.js', 'TypeScript', 'Stripe', 'Prisma'],
     github: 'https://github.com',
     demo: 'https://demo.com',
