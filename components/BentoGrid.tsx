@@ -97,28 +97,32 @@ export function BentoGrid() {
 
                 {/* Buttons */}
                 <div className="flex gap-3 mt-auto">
-                  <a
+                  <motion.a
                     href={featuredProject.demo}
                     target="_blank"
                     rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.98 }}
                     className="flex-1 px-4 py-2 rounded-lg bg-primary text-white
                       hover:bg-primary/90 transition-all duration-300
                       flex items-center justify-center gap-2 text-sm font-medium"
                   >
                     <ExternalLink className="h-4 w-4" />
                     Demo
-                  </a>
-                  <a
+                  </motion.a>
+                  <motion.a
                     href={featuredProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.98 }}
                     className="px-4 py-2 rounded-lg border border-gray-300 dark:border-slate-700
                       hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-300
                       flex items-center justify-center gap-2 text-sm font-medium"
                   >
                     <Github className="h-4 w-4" />
                     GitHub
-                  </a>
+                  </motion.a>
                 </div>
               </div>
             </motion.div>
@@ -240,23 +244,27 @@ export function BentoGrid() {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-3">
-              <button
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
                 className="px-6 py-3 rounded-lg bg-primary text-white
                   hover:bg-primary/90 transition-all duration-300
-                  flex items-center gap-2 font-medium hover:scale-105"
+                  flex items-center gap-2 font-medium"
               >
                 <Download className="h-4 w-4" />
                 Descargar CV
-              </button>
-              <a
+              </motion.button>
+              <motion.a
                 href={`mailto:${personalInfo.email}`}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
                 className="px-6 py-3 rounded-lg border border-gray-300 dark:border-slate-700
                   hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-300
-                  flex items-center gap-2 font-medium hover:scale-105"
+                  flex items-center gap-2 font-medium"
               >
                 <Mail className="h-4 w-4" />
                 Contactar
-              </a>
+              </motion.a>
             </div>
           </motion.div>
 

@@ -10,9 +10,44 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Linamaría Martínez | Frontend Developer & UX Researcher',
-  description: 'Portfolio personal de Linamaría Martínez - Frontend Developer & UX Researcher',
-  keywords: ['portfolio', 'frontend developer', 'UX researcher', 'Next.js', 'React', 'TypeScript'],
+  title: 'Linamaría Martínez | Desarrolladora Full Stack',
+  description: 'Desarrolladora Full Stack con más de 3 años de experiencia creando aplicaciones web modernas y escalables. Especializada en React, Next.js y TypeScript.',
+  keywords: ['portfolio', 'desarrolladora full stack', 'frontend developer', 'React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+  authors: [{ name: 'Linamaría Martínez' }],
+  creator: 'Linamaría Martínez',
+  openGraph: {
+    type: 'website',
+    locale: 'es_CO',
+    url: 'https://linamariamartinez.dev',
+    title: 'Linamaría Martínez | Desarrolladora Full Stack',
+    description: 'Portfolio profesional de Linamaría Martínez - Desarrolladora Full Stack especializada en React, Next.js y TypeScript.',
+    siteName: 'Linamaría Martínez Portfolio',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Linamaría Martínez - Desarrolladora Full Stack',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Linamaría Martínez | Desarrolladora Full Stack',
+    description: 'Portfolio profesional de Linamaría Martínez - Desarrolladora Full Stack especializada en React, Next.js y TypeScript.',
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function RootLayout({
