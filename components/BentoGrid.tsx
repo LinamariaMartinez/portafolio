@@ -31,10 +31,10 @@ export function BentoGrid() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="md:col-span-2 p-8 rounded-2xl backdrop-blur-sm
-              bg-white dark:bg-slate-900/50
-              border border-gray-200 dark:border-slate-800
-              hover:border-gray-300 dark:hover:border-slate-700
-              transition-all duration-300 hover:shadow-lg"
+              bg-white dark:bg-slate-800
+              border border-gray-200 dark:border-slate-600
+              hover:border-gray-300 dark:hover:border-slate-500
+              transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary/10"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4
               bg-gradient-to-r from-primary via-secondary to-accent
@@ -57,10 +57,10 @@ export function BentoGrid() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               className="md:col-span-2 p-6 rounded-2xl backdrop-blur-sm
-                bg-white dark:bg-slate-900/50
-                border border-gray-200 dark:border-slate-800
-                hover:border-gray-300 dark:hover:border-slate-700
-                transition-all duration-300 hover:shadow-lg
+                bg-white dark:bg-slate-800
+                border border-gray-200 dark:border-slate-600
+                hover:border-gray-300 dark:hover:border-slate-500
+                transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary/10
                 group"
             >
               <div className="flex flex-col h-full">
@@ -116,9 +116,9 @@ export function BentoGrid() {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.98 }}
-                    className="px-4 py-2 rounded-lg border border-gray-300 dark:border-slate-700
-                      hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-300
-                      flex items-center justify-center gap-2 text-sm font-medium"
+                    className="px-4 py-2 rounded-lg border border-gray-300 dark:border-slate-600
+                      hover:bg-gray-100 dark:hover:bg-slate-700 transition-all duration-300
+                      flex items-center justify-center gap-2 text-sm font-medium text-foreground"
                   >
                     <Github className="h-4 w-4" />
                     GitHub
@@ -136,10 +136,10 @@ export function BentoGrid() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="md:col-span-1 md:row-span-2 p-6 rounded-2xl backdrop-blur-sm
-              bg-white dark:bg-slate-900/50
-              border border-gray-200 dark:border-slate-800
-              hover:border-gray-300 dark:hover:border-slate-700
-              transition-all duration-300 hover:shadow-lg
+              bg-white dark:bg-slate-800
+              border border-gray-200 dark:border-slate-600
+              hover:border-gray-300 dark:hover:border-slate-500
+              transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary/10
               flex flex-col items-center justify-center"
           >
             {/* Avatar Placeholder */}
@@ -192,10 +192,10 @@ export function BentoGrid() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             className="md:col-span-1 p-6 rounded-2xl backdrop-blur-sm
-              bg-white dark:bg-slate-900/50
-              border border-gray-200 dark:border-slate-800
-              hover:border-gray-300 dark:hover:border-slate-700
-              transition-all duration-300 hover:shadow-lg"
+              bg-white dark:bg-slate-800
+              border border-gray-200 dark:border-slate-600
+              hover:border-gray-300 dark:hover:border-slate-500
+              transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary/10"
           >
             <div className="grid grid-cols-2 gap-4 h-full">
               {stats.map((stat, index) => {
@@ -207,8 +207,8 @@ export function BentoGrid() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3, delay: 0.5 + index * 0.1 }}
                     className="flex flex-col items-center justify-center p-3 rounded-xl
-                      bg-gradient-to-br from-primary/5 to-secondary/5
-                      border border-primary/10 hover:border-primary/30
+                      bg-gradient-to-br from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20
+                      border border-primary/20 dark:border-primary/30 hover:border-primary/40 dark:hover:border-primary/50
                       transition-all duration-300 hover:scale-105"
                   >
                     <Icon className="h-6 w-6 text-primary mb-2" />
@@ -232,10 +232,10 @@ export function BentoGrid() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
             className="md:col-span-2 p-8 rounded-2xl backdrop-blur-sm
-              bg-white dark:bg-slate-900/50
-              border border-gray-200 dark:border-slate-800
-              hover:border-gray-300 dark:hover:border-slate-700
-              transition-all duration-300 hover:shadow-lg"
+              bg-white dark:bg-slate-800
+              border border-gray-200 dark:border-slate-600
+              hover:border-gray-300 dark:hover:border-slate-500
+              transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary/10"
           >
             <h3 className="text-xl font-bold mb-4 text-foreground">Sobre mí</h3>
             <p className="text-foreground/80 leading-relaxed mb-6">
@@ -258,9 +258,9 @@ export function BentoGrid() {
                 href={`mailto:${personalInfo.email}`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-6 py-3 rounded-lg border border-gray-300 dark:border-slate-700
-                  hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-300
-                  flex items-center gap-2 font-medium"
+                className="px-6 py-3 rounded-lg border border-gray-300 dark:border-slate-600
+                  hover:bg-gray-100 dark:hover:bg-slate-700 transition-all duration-300
+                  flex items-center gap-2 font-medium text-foreground"
               >
                 <Mail className="h-4 w-4" />
                 Contactar
@@ -274,10 +274,10 @@ export function BentoGrid() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
             className="md:col-span-1 p-6 rounded-2xl backdrop-blur-sm
-              bg-white dark:bg-slate-900/50
-              border border-gray-200 dark:border-slate-800
-              hover:border-gray-300 dark:hover:border-slate-700
-              transition-all duration-300 hover:shadow-lg"
+              bg-white dark:bg-slate-800
+              border border-gray-200 dark:border-slate-600
+              hover:border-gray-300 dark:hover:border-slate-500
+              transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary/10"
           >
             <h3 className="text-lg font-bold mb-4 text-foreground">Top Skills</h3>
             <div className="space-y-4">
@@ -291,7 +291,7 @@ export function BentoGrid() {
                       {skill.level}%
                     </span>
                   </div>
-                  <div className="w-full h-2 bg-gray-200 dark:bg-slate-800 rounded-full overflow-hidden">
+                  <div className="w-full h-2 bg-gray-200 dark:bg-slate-700 rounded-full overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
                       animate={{ width: `${skill.level}%` }}

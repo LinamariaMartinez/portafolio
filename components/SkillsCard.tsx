@@ -33,10 +33,10 @@ export function SkillsCard({ category, items, index }: SkillsCardProps) {
       animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="p-6 md:p-8 rounded-2xl backdrop-blur-sm
-        bg-white dark:bg-slate-900/50
-        border border-gray-200 dark:border-slate-800
-        hover:border-gray-300 dark:hover:border-slate-700
-        transition-all duration-300 hover:shadow-lg"
+        bg-white dark:bg-slate-800
+        border border-gray-200 dark:border-slate-600
+        hover:border-gray-300 dark:hover:border-slate-500
+        transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary/10"
     >
       {/* Título de categoría */}
       <h3 className="text-xl md:text-2xl font-bold mb-6 text-foreground">
@@ -58,7 +58,7 @@ export function SkillsCard({ category, items, index }: SkillsCardProps) {
             </div>
 
             {/* Barra de progreso */}
-            <div className="w-full h-2.5 bg-gray-200 dark:bg-slate-800 rounded-full overflow-hidden">
+            <div className="w-full h-2.5 bg-gray-200 dark:bg-slate-700 rounded-full overflow-hidden">
               <motion.div
                 initial={{ width: 0 }}
                 animate={isInView ? { width: `${skill.level}%` } : { width: 0 }}
