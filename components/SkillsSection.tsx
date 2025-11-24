@@ -2,9 +2,13 @@
 
 import { motion } from 'framer-motion'
 import { SkillsCard } from './SkillsCard'
-import { skills } from '@/lib/data'
+import { getData } from '@/lib/get-data'
+import { useLocale, useTranslations } from 'next-intl'
 
 export function SkillsSection() {
+  const locale = useLocale()
+  const t = useTranslations('skills')
+  const { skills } = getData(locale)
   return (
     <section className="w-full py-16 md:py-24 px-4 md:px-8 lg:px-12 bg-gray-50/50 dark:bg-slate-950/50">
       <div className="max-w-7xl mx-auto">
@@ -19,10 +23,10 @@ export function SkillsSection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4
             bg-gradient-to-r from-primary via-secondary to-accent
             bg-clip-text text-transparent">
-            Stack & Habilidades
+            {t('title')}
           </h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-            Tecnologías y herramientas con las que trabajo día a día
+            {t('subtitle')}
           </p>
         </motion.div>
 

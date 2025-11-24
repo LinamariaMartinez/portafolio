@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "featuredProject": "Proyecto Destacado",
+    "aboutMe": "Sobre mí",
+    "topSkills": "Top Skills",
+    "downloadCV": "Descargar CV",
+    "contact": "Contactar",
+    "demo": "Demo",
+    "github": "GitHub"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Una selección de mis trabajos más recientes y destacados",
+    "featured": "Featured",
+    "demo": "Demo",
+    "github": "GitHub"
+  },
+  "skills": {
+    "title": "Stack & Habilidades",
+    "subtitle": "Tecnologías y herramientas con las que trabajo día a día"
+  },
+  "footer": {
+    "madeWith": "Hecho con",
+    "by": "por",
+    "rightsReserved": "Todos los derechos reservados"
+  },
+  "stats": {
+    "experience": "Años de experiencia",
+    "projects": "Proyectos completados",
+    "clients": "Clientes satisfechos",
+    "coffee": "Tazas de café"
+  }
+}

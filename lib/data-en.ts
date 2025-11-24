@@ -1,9 +1,9 @@
 export const personalInfo = {
   name: "Linamaría Martínez",
   title: "Frontend Developer | UX Researcher",
-  bio: "Frontend Developer con formación en antropología y 10+ años en investigación UX",
+  bio: "Frontend Developer with anthropology background and 10+ years in UX research",
   fullBio:
-    "Frontend Developer con formación en antropología y más de 10 años de experiencia en investigación UX. Me especializo en el ecosistema de React y Next.js, con un fuerte enfoque en la experiencia del usuario y las mejores prácticas de desarrollo. Apasionada por crear interfaces accesibles que resuelvan necesidades reales.",
+    "Frontend Developer with anthropology background and over 10 years of experience in UX research. I specialize in the React and Next.js ecosystem, with a strong focus on user experience and development best practices. Passionate about creating accessible interfaces that solve real needs.",
   location: "Quindío, Colombia",
   email: "linamariamartinezp@gmail.com",
   social: {
@@ -16,25 +16,25 @@ export const personalInfo = {
 export const stats = [
   {
     id: 1,
-    label: "Años de experiencia",
+    label: "Years of experience",
     value: "10+",
     icon: "calendar",
   },
   {
     id: 2,
-    label: "Proyectos completados",
+    label: "Completed projects",
     value: "20+",
     icon: "folder",
   },
   {
     id: 3,
-    label: "Clientes satisfechos",
+    label: "Satisfied clients",
     value: "15+",
     icon: "users",
   },
   {
     id: 4,
-    label: "Tazas de café",
+    label: "Cups of coffee",
     value: "∞",
     icon: "coffee",
   },
@@ -92,7 +92,7 @@ export const projects = [
     id: 1,
     title: "Event Master",
     description:
-      "Plataforma completa de gestión de eventos con autenticación, registro de asistentes, gestión de tickets y dashboard administrativo.",
+      "Complete event management platform with authentication, attendee registration, ticket management, and administrative dashboard.",
     image: "/projects/event-master.jpg",
     tags: ["Next.js 14", "TypeScript", "Supabase", "Tailwind"],
     github: "https://github.com/LinamariaMartinez/eventMaster",
@@ -103,7 +103,7 @@ export const projects = [
     id: 2,
     title: "Comfachocó Hackathon",
     description:
-      "Sistema de gestión de clientes y productos desarrollado durante hackathon, con autenticación y manejo de estado global.",
+      "Client and product management system developed during hackathon, with authentication and global state management.",
     image: "/projects/project2.jpg",
     tags: ["React 19", "Vite", "Tailwind", "Zustand", "Supabase"],
     github: "https://github.com/LinamariaMartinez/Hackaton-Comfachoco",
@@ -114,7 +114,7 @@ export const projects = [
     id: 3,
     title: "Alumnithon 2025",
     description:
-      "🥈 Segundo lugar en hackathon. Proyecto colaborativo desarrollado con React y TypeScript para solución innovadora.",
+      "🥈 Second place in hackathon. Collaborative project developed with React and TypeScript for innovative solution.",
     image: "/projects/project3.jpg",
     tags: ["React 18", "TypeScript", "Vite"],
     github: "https://github.com/alumnithon",
@@ -125,7 +125,7 @@ export const projects = [
     id: 4,
     title: "AluraFlix",
     description:
-      "Aplicación estilo Netflix para gestión de videos, con categorías personalizadas y diseño responsivo usando Styled Components.",
+      "Netflix-style application for video management, with custom categories and responsive design using Styled Components.",
     image: "/projects/project4.jpg",
     tags: ["React 18", "Styled Components"],
     github: "https://github.com/LinamariaMartinez/AluraFlix",

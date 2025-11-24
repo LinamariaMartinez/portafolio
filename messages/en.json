@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "featuredProject": "Featured Project",
+    "aboutMe": "About Me",
+    "topSkills": "Top Skills",
+    "downloadCV": "Download CV",
+    "contact": "Contact",
+    "demo": "Demo",
+    "github": "GitHub"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of my most recent and outstanding work",
+    "featured": "Featured",
+    "demo": "Demo",
+    "github": "GitHub"
+  },
+  "skills": {
+    "title": "Stack & Skills",
+    "subtitle": "Technologies and tools I work with every day"
+  },
+  "footer": {
+    "madeWith": "Made with",
+    "by": "by",
+    "rightsReserved": "All rights reserved"
+  },
+  "stats": {
+    "experience": "Years of experience",
+    "projects": "Completed projects",
+    "clients": "Satisfied clients",
+    "coffee": "Cups of coffee"
+  }
+}

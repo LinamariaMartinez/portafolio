@@ -2,14 +2,18 @@
 
 import { motion } from 'framer-motion'
 import { ProjectCard } from './ProjectCard'
-import { projects } from '@/lib/data'
+import { getData } from '@/lib/get-data'
+import { useLocale, useTranslations } from 'next-intl'
 
 export function ProjectsSection() {
+  const locale = useLocale()
+  const t = useTranslations('projects')
+  const { projects } = getData(locale)
   // Mostrar solo los primeros 3 proyectos
   const featuredProjects = projects.slice(0, 3)
 
   return (
-    <section className="w-full py-16 md:py-24 px-4 md:px-8 lg:px-12">
+    <section className="w-full py-16 md:py-24 px-4 md:px-8 lg:px-12 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto">
         {/* Título de la sección */}
         <motion.div
@@ -22,10 +26,10 @@ export function ProjectsSection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4
             bg-gradient-to-r from-primary via-secondary to-accent
             bg-clip-text text-transparent">
-            Proyectos Destacados
+            {t('title')}
           </h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-            Una selección de mis trabajos más recientes y destacados
+            {t('subtitle')}
           </p>
         </motion.div>
 

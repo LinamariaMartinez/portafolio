@@ -56,11 +56,11 @@ export const skills = [
     id: 2,
     category: "UX Research",
     items: [
-      { name: "User Interviews", level: 85 },
-      { name: "Usability Testing", level: 88 },
+      { name: "Entrevistas de Usuario", level: 85 },
+      { name: "Pruebas de Usabilidad", level: 88 },
       { name: "Wireframing", level: 90 },
-      { name: "Prototyping", level: 87 },
-      { name: "Design Systems", level: 82 },
+      { name: "Prototipado", level: 87 },
+      { name: "Sistemas de Diseño", level: 82 },
     ],
   },
   {
@@ -76,7 +76,7 @@ export const skills = [
   },
   {
     id: 4,
-    category: "Tools",
+    category: "Herramientas",
     items: [
       { name: "Git", level: 90 },
       { name: "Docker", level: 75 },

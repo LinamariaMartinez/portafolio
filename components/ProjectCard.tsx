@@ -18,10 +18,16 @@ interface ProjectCardProps {
 // Colores por tecnología - mejorados para dark mode
 const tagColors: Record<string, string> = {
   'React': 'bg-blue-500/10 dark:bg-blue-400/20 text-blue-500 dark:text-blue-300 border-blue-500/20 dark:border-blue-400/30',
+  'React 18': 'bg-blue-500/10 dark:bg-blue-400/20 text-blue-500 dark:text-blue-300 border-blue-500/20 dark:border-blue-400/30',
+  'React 19': 'bg-blue-500/10 dark:bg-blue-400/20 text-blue-500 dark:text-blue-300 border-blue-500/20 dark:border-blue-400/30',
   'Next.js': 'bg-blue-600/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-200 border-blue-600/20 dark:border-blue-500/30',
+  'Next.js 14': 'bg-blue-600/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-200 border-blue-600/20 dark:border-blue-500/30',
   'TypeScript': 'bg-blue-700/10 dark:bg-blue-600/20 text-blue-700 dark:text-blue-100 border-blue-700/20 dark:border-blue-600/30',
   'Tailwind': 'bg-cyan-500/10 dark:bg-cyan-400/20 text-cyan-500 dark:text-cyan-300 border-cyan-500/20 dark:border-cyan-400/30',
   'Supabase': 'bg-green-500/10 dark:bg-green-400/20 text-green-500 dark:text-green-300 border-green-500/20 dark:border-green-400/30',
+  'Vite': 'bg-purple-600/10 dark:bg-purple-500/20 text-purple-600 dark:text-purple-200 border-purple-600/20 dark:border-purple-500/30',
+  'Zustand': 'bg-amber-600/10 dark:bg-amber-500/20 text-amber-600 dark:text-amber-200 border-amber-600/20 dark:border-amber-500/30',
+  'Styled Components': 'bg-pink-600/10 dark:bg-pink-500/20 text-pink-600 dark:text-pink-200 border-pink-600/20 dark:border-pink-500/30',
   'Node.js': 'bg-green-600/10 dark:bg-green-500/20 text-green-600 dark:text-green-200 border-green-600/20 dark:border-green-500/30',
   'MongoDB': 'bg-green-700/10 dark:bg-green-600/20 text-green-700 dark:text-green-100 border-green-700/20 dark:border-green-600/30',
   'Express': 'bg-gray-500/10 dark:bg-gray-400/20 text-gray-500 dark:text-gray-200 border-gray-500/20 dark:border-gray-400/30',

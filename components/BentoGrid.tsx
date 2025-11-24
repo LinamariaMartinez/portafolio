@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail, MapPin, Download, ExternalLink, Calendar, Folder, Users, Coffee } from 'lucide-react'
-import { personalInfo, stats, skills, projects } from '@/lib/data'
+import { getData } from '@/lib/get-data'
+import { useLocale, useTranslations } from 'next-intl'
 import Image from 'next/image'
 
 // Icon mapping for stats
@@ -14,11 +15,14 @@ const iconMap = {
 }
 
 export function BentoGrid() {
+  const locale = useLocale()
+  const t = useTranslations('hero')
+  const { personalInfo, stats, skills, projects } = getData(locale)
   const featuredProject = projects.find(p => p.featured)
   const topSkills = skills[0].items.slice(0, 3) // Top 3 frontend skills
 
   return (
-    <div className="min-h-screen p-4 md:p-8 lg:p-12">
+    <div className="min-h-screen p-4 md:p-8 lg:p-12 bg-white dark:bg-slate-900">
       {/* Bento Grid Hero Section */}
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[minmax(200px,auto)]">
@@ -66,7 +70,7 @@ export function BentoGrid() {
               <div className="flex flex-col h-full">
                 <div className="mb-3">
                   <span className="text-xs font-semibold text-primary uppercase tracking-wider">
-                    Proyecto Destacado
+                    {t('featuredProject')}
                   </span>
                 </div>
 
@@ -97,31 +101,34 @@ export function BentoGrid() {
 
                 {/* Buttons */}
                 <div className="flex gap-3 mt-auto">
-                  <motion.a
-                    href={featuredProject.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="flex-1 px-4 py-2 rounded-lg bg-primary text-white
-                      hover:bg-primary/90 transition-all duration-300
-                      flex items-center justify-center gap-2 text-sm font-medium"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                    Demo
-                  </motion.a>
+                  {featuredProject.demo && (
+                    <motion.a
+                      href={featuredProject.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="flex-1 px-4 py-2 rounded-lg bg-primary text-white
+                        hover:bg-primary/90 transition-all duration-300
+                        flex items-center justify-center gap-2 text-sm font-medium"
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                      {t('demo')}
+                    </motion.a>
+                  )}
                   <motion.a
                     href={featuredProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.98 }}
-                    className="px-4 py-2 rounded-lg border border-gray-300 dark:border-slate-600
+                    className={`px-4 py-2 rounded-lg border border-gray-300 dark:border-slate-600
                       hover:bg-gray-100 dark:hover:bg-slate-700 transition-all duration-300
-                      flex items-center justify-center gap-2 text-sm font-medium text-foreground"
+                      flex items-center justify-center gap-2 text-sm font-medium text-foreground
+                      ${!featuredProject.demo ? 'flex-1' : ''}`}
                   >
                     <Github className="h-4 w-4" />
-                    GitHub
+                    {t('github')}
                   </motion.a>
                 </div>
               </div>
@@ -237,7 +244,7 @@ export function BentoGrid() {
               hover:border-gray-300 dark:hover:border-slate-500
               transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary/10"
           >
-            <h3 className="text-xl font-bold mb-4 text-foreground">Sobre mí</h3>
+            <h3 className="text-xl font-bold mb-4 text-foreground">{t('aboutMe')}</h3>
             <p className="text-foreground/80 leading-relaxed mb-6">
               {personalInfo.fullBio}
             </p>
@@ -252,7 +259,7 @@ export function BentoGrid() {
                   flex items-center gap-2 font-medium"
               >
                 <Download className="h-4 w-4" />
-                Descargar CV
+                {t('downloadCV')}
               </motion.button>
               <motion.a
                 href={`mailto:${personalInfo.email}`}
@@ -263,7 +270,7 @@ export function BentoGrid() {
                   flex items-center gap-2 font-medium text-foreground"
               >
                 <Mail className="h-4 w-4" />
-                Contactar
+                {t('contact')}
               </motion.a>
             </div>
           </motion.div>
@@ -279,7 +286,7 @@ export function BentoGrid() {
               hover:border-gray-300 dark:hover:border-slate-500
               transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary/10"
           >
-            <h3 className="text-lg font-bold mb-4 text-foreground">Top Skills</h3>
+            <h3 className="text-lg font-bold mb-4 text-foreground">{t('topSkills')}</h3>
             <div className="space-y-4">
               {topSkills.map((skill, index) => (
                 <div key={index} className="space-y-2">

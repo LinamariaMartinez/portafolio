@@ -2,9 +2,13 @@
 
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail } from 'lucide-react'
-import { personalInfo } from '@/lib/data'
+import { getData } from '@/lib/get-data'
+import { useLocale, useTranslations } from 'next-intl'
 
 export function Footer() {
+  const locale = useLocale()
+  const t = useTranslations('footer')
+  const { personalInfo } = getData(locale)
   const currentYear = new Date().getFullYear()
 
   return (
@@ -24,7 +28,7 @@ export function Footer() {
 
           {/* Tech Stack */}
           <p className="text-sm text-foreground/60">
-            Creado con <span className="text-primary font-semibold">Next.js</span> + {' '}
+            {t('madeWith')} <span className="text-primary font-semibold">Next.js</span> + {' '}
             <span className="text-primary font-semibold">TypeScript</span> + {' '}
             <span className="text-primary font-semibold">Tailwind CSS</span>
           </p>
@@ -80,7 +84,7 @@ export function Footer() {
 
           {/* Copyright */}
           <p className="text-sm text-foreground/50">
-            © {currentYear} {personalInfo.name}. Todos los derechos reservados.
+            © {currentYear} {personalInfo.name}. {t('rightsReserved')}.
           </p>
         </motion.div>
       </div>

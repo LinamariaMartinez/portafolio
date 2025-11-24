@@ -61,10 +61,31 @@
 
 .dark {
   --background: #0f172a;
-  --foreground: #f8fafc;
+  --foreground: rgb(241 245 249);
   --card-bg: #1e293b;
   --card-border: #334155;
   --card-hover: #475569;
+}
+
+/* Dark mode text opacity overrides for better readability */
+.dark .text-foreground\/90 {
+  color: rgb(226 232 240);
+}
+
+.dark .text-foreground\/80 {
+  color: rgb(203 213 225);
+}
+
+.dark .text-foreground\/70 {
+  color: rgb(203 213 225);
+}
+
+.dark .text-foreground\/60 {
+  color: rgb(226 232 240);
+}
+
+.dark .text-foreground\/50 {
+  color: rgb(148 163 184);
 }
 
 body {
