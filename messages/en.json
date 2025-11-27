@@ -12,7 +12,10 @@
     "downloadCV": "Download CV",
     "contact": "Contact",
     "demo": "Demo",
-    "github": "GitHub"
+    "github": "GitHub",
+    "availability": "Availability",
+    "openToOpportunities": "Open to opportunities",
+    "workPreference": "Remote or hybrid in Colombia"
   },
   "projects": {
     "title": "Featured Projects",
